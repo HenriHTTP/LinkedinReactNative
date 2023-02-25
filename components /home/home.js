@@ -19,7 +19,7 @@ import {useNavigation} from "@react-navigation/native"
 
 
 
-export default function home() {
+export default function Home() {
     const navigation = useNavigation();
     let  msg = () => { 
         Alert.alert('true')

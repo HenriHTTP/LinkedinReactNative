@@ -10,7 +10,7 @@ import {
     SeachIcon,
 } from '../Style/Styled';
 
-export default function navBar ({route}) { 
+export default function Menu ({route}) { 
     return (
         <> 
         <StatusBarDefault/>
