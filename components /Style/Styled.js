@@ -63,6 +63,7 @@ export const  InputUser = styled.TextInput `
         border-radius:5px;   
         color:black;
         opacity:0.7; 
+        
 `
 export  const ViemForm = styled.View `
         background-color:white;
@@ -90,7 +91,7 @@ export const LinkButtonText = styled.Text`
 
 `
 export const ButtonView =  styled.View `
-        height:200px;
+        height:50%;
         display:flex;  
         justify-content:center;
 
@@ -103,14 +104,37 @@ export const NavBar = styled.View `
         flex-direction:row;   
 `
 export const SeachInput =  styled.TextInput`
-        width:300px;
-        border-radius:5px;
+        width:280px;
         background-color:whitesmoke;
         height: 30px;
         margin:auto;
+        padding:5px;
+        border-top-left-radius:5px; 
+        border-bottom-left-radius:5px; 
+        color:gray;
+        text-decoration:none;
 `
 export const TextNavbar = styled.Text `
         color:gray;   
         margin:auto;
         opacity:0.3;
+`
+export const PressIcons =styled.TouchableOpacity`
+        width: 55px;
+`
+export const SeachButton =styled.TouchableOpacity`
+        width: 30px;
+        background-color:whitesmoke;
+        height:30px;
+        margin:auto;
+        display:flex; 
+        justify-content:center;
+        border-top-right-radius:5px; 
+        border-bottom-right-radius:5px; 
+`
+export  const SeachIcon = styled.Text`
+        color:white;
+        opacity:0.3;
+        color:gray;  
+
 `

@@ -5,16 +5,33 @@ import {
     StatusBarDefault,
     SeachInput,
     TextNavbar,
+    PressIcons,
+    SeachButton,
+    SeachIcon,
 } from '../Style/Styled';
 
-export default function navBar ({nameiconsLeft,nameiconsRight}) { 
+export default function navBar ({route}) { 
     return (
         <> 
         <StatusBarDefault/>
         <NavBar> 
-           <TextNavbar><Icon name={nameiconsLeft} size={30}/></TextNavbar> 
+
+        <PressIcons>
+           <TextNavbar><Icon name={route.params.LeftIcons} size={30}/></TextNavbar> 
+        </PressIcons>
             <SeachInput/>
-            <TextNavbar><Icon name={nameiconsRight} size={30}/></TextNavbar> 
+            <SeachButton>
+                    <SeachIcon> <Icon name='search1' size={15}/></SeachIcon>
+                </SeachButton>
+               
+           
+
+
+            <PressIcons>
+
+            <TextNavbar><Icon name={route.params.RightIcons} size={30}/></TextNavbar> 
+
+            </PressIcons>
         </NavBar>
         </>
     )
