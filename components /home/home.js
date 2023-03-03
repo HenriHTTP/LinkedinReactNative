@@ -12,10 +12,12 @@ import {
     LinkButton,
     LinkButtonText,
     ButtonView,
+    ContainerDefault,
 } from '../Style/Styled';
 import {Alert} from 'react-native';
 import  Icon from 'react-native-vector-icons/AntDesign'
 import {useNavigation} from "@react-navigation/native"
+
 
 
 
@@ -28,10 +30,11 @@ export default function Home() {
     return(
         <>
         <StatusBarDefault/>
+        <ContainerDefault>
         <NaVDefault>
             <TitleDefault> <Icon name='linkedin-square' size={70}/> </TitleDefault>
         </NaVDefault>
-        <ViewDefault>
+        <ViewDefault animation="fadeInUp">
             <ViemForm>
                 <LabelDefault>E-mail</LabelDefault>
             <InputUser/>
@@ -43,18 +46,18 @@ export default function Home() {
             <LinkButton>
             <LinkButtonText> forgot your Password</LinkButtonText>
             </LinkButton>
-
-
-            <ButtonView>
+            
+            
             <ButtonContainer onPress={handleNavigate}>
                      <ButtonText><Icon name='arrowright' size={20}/> sign </ButtonText>
             </ButtonContainer>
-            </ButtonView>
+
+    
           
 
             </ViemForm>
         </ViewDefault>
-            
+        </ContainerDefault>   
         </>
     )
 }

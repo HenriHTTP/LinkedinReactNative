@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components/native';
 import {Text,View,Button,TouchableOpacity,TextInput,StatusBar} from 'react-native';
 
+
 export  const TitleDefault = styled.Text `
         color:white;
         font-size:40px;   
@@ -18,28 +19,35 @@ export  const SubtitleDefault = styled.Text `
         opacity :0.8;
         margin:auto;
 `
-export  const NaVDefault = styled.View `
-        background-color:#5187fc;   
+export  const NaVDefault = styled.View `  
         height:200px; 
         display: flex;
         justify-content:center;
 `
-export  const ViewDefault  = styled.View `
-        background-color:#5187fc;   
-        justify-content: space-around;
+export  const ViewDefault  = styled.View ` 
+        justify-content: space-between;
         flex-direction:column; 
+        flex:1;
+        background-color:white;
+        border-top-left-radius:20px; 
+        border-top-right-radius:20px; 
+
 
 `
 
 export const ButtonContainer = styled.TouchableOpacity`
         margin:auto;
-        width: 150px;
-        height: 50px;
-        padding: 10px;
+        width: 300px;
+        padding: 5px;
         border-radius:5px;
         background-color:#5187fc;
+        margin-top:10px;
+        margin-bottom:10px;
+
+
 
 `
+
 export const ButtonText = styled.Text`
         font-size: 20px;
         text-align: center;
@@ -53,14 +61,15 @@ export const LabelDefault = styled.Text`
         width:300px;
         margin:auto;
         text-align:left;
-        padding-top:20px; 
+        padding:20px; 
 `
 export const  InputUser = styled.TextInput `
-        width:300px;
-        padding: 10px;
+        width:280px;
+        padding: 5px;
         background-color:whitesmoke;   
         margin:auto;   
         border-radius:5px;   
+        height: 30px;
         color:black;
         opacity:0.7; 
         
@@ -70,9 +79,10 @@ export  const ViemForm = styled.View `
         border-top-left-radius:20px; 
         border-top-right-radius:20px; 
 
+
 `
 export  const StatusBarDefault = styled.StatusBar`
-        background-color:white;
+        background-color:#5187fc;
       
 `
 export  const LinkButton = styled.TouchableOpacity`
@@ -87,12 +97,13 @@ export const LinkButtonText = styled.Text`
         text-align: left; 
         color:black;
         text-decoration: underline;
+        padding:20px;
 
 
 `
 export const ButtonView =  styled.View `
-        height:50%;
-        display:flex;  
+        height:400px;
+        display:flex;
         justify-content:center;
 
 `
@@ -136,5 +147,13 @@ export  const SeachIcon = styled.Text`
         color:white;
         opacity:0.3;
         color:gray;  
+
+`
+
+export  const ContainerDefault = styled.View `
+        background-color:#5187fc;
+        flex:1; 
+    
+
 
 `
